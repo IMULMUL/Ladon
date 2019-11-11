@@ -180,3 +180,46 @@ Ladon采用C#研发，程序体积很小500K左右，即便马不行也能上传
 7  漏洞利用 PhpStudy后门 GetShell Exploit<br>
 8  INI调用外部程序命令 批量SSH上控<br>
 9  INI调用外部程序命令 批量Win上控<br>
+
+
+## 中级用法
+
+### 禁ping扫描
+默认扫描会先通过icmp扫描主机是否存活，当使用工具转发内网<br>
+或者目标机器禁ping时,使用noping参数进行扫描,速度稍慢一点<br>
+Ladon noping<br>
+Ladon noping 192.168.1.8/24<br>
+Ladon noping 192.168.1.8/24 MS17010<br>
+
+### 配置Ladon.ini调用任意程序命令或脚本
+1  调用系统ping命令进行存活主机探测
+ping.ini<br>
+[Ladon]<br>
+exe=cmd.exe<br>
+arg=/c ping $ip$<br>
+
+``` bash
+> Ladon ping.ini
+> Ladon 192.168.1.8/24 ping.ini
+```
+2  调用Python poc批量检测漏洞
+[Ladon]<br>
+exe=F:\Python279\python.exe<br>
+arg=CVE-2019-11043-POC.py $ip$<br>
+
+例子: https://github.com/k8gege/CVE-2019-11043
+
+### 自定义端口扫描
+使用PortScan模块时，默认扫描常见高危漏洞端口<br>
+遇到修改了默认端口的，Ladon就无法扫描了吗？<br>
+使用port.txt<br>
+格式1:80,21,1433,3306,445<br>
+格式2:80-88,21-23,5800-5900<br>
+格式3:<br>
+21<br>
+23<br>
+80<br>
+格式4:<br>
+80-88<br>
+21-23<br>
+
