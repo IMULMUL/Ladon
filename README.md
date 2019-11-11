@@ -268,3 +268,6 @@ http://192.168.1.8:7001/console weblogic k8gege<br>
 命令: Ladon test.rar RarScan<br>
 
 ## 未完待续...
+1 EXP生成器使用<br>
+2 各种语言插件编写<br>
+可先参考Cscan: https://github.com/k8gege/K8CScan/wiki<br>
