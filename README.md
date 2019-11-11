@@ -1,4 +1,4 @@
-# Ladon 5.5 20191109
+# Ladon 5.5 20191109   Readme update 20191111
 
 [![Author](https://img.shields.io/badge/Author-k8gege-blueviolet)](https://github.com/k8gege) 
 [![Ladon](https://img.shields.io/badge/Ladon-5.5-yellowgreen)](https://github.com/k8gege/Ladon) 
@@ -191,7 +191,7 @@ Ladon noping<br>
 Ladon noping 192.168.1.8/24<br>
 Ladon noping 192.168.1.8/24 MS17010<br>
 
-### 配置Ladon.ini调用任意程序命令或脚本
+### 配置INI调用任意程序或命令脚本
 1  调用系统ping命令进行存活主机探测
 ping.ini<br>
 [Ladon]<br>
@@ -209,7 +209,7 @@ arg=CVE-2019-11043-POC.py $ip$<br>
 
 例子: https://github.com/k8gege/CVE-2019-11043
 
-### 自定义端口扫描
+### 配置端口扫描参数
 使用PortScan模块时，默认扫描常见高危漏洞端口<br>
 遇到修改了默认端口的，Ladon就无法扫描了吗？<br>
 使用port.txt<br>
@@ -223,3 +223,40 @@ arg=CVE-2019-11043-POC.py $ip$<br>
 80-88<br>
 21-23<br>
 
+### 配置密码爆破参数
+1  支持标准的user.txt和pass.txt帐密破解，爆破每个用户都需将密码跑完或跑出正确为此<br>
+2  支持userpass.txt（存放用户名和对应密码）,用于快速验证其它机器是否存在相同帐密<br>
+3  支持check.txt（存放IP/端口/库名/用户/密码）,不指定端口和数据库名则使用默认<br>
+
+#### 数据库口令检测
+数据库与其它密码爆破不同，有时数据库做了权限，指定用户只能连指定库，连默认库肯定不行<br>
+###### mssql密码验证(大型内网可能从其它机器收集到大量机器密码，第一步肯定是先验证)<br>
+非默认端口请将以下端口改成被修改端口即可，单个IP可直接Ladon IP:端口 MssqlScan扫描<br>
+check.txt<br>
+192.168.1.8 1433 master sa k8gege<br>
+192.168.1.8 sa k8gege<br>
+192.168.1.8 1433 sa k8gege<br>
+命令: Ladon MssqlScan<br>
+###### oracle同理,但是要注意Oracle 11G以后默认尝试不到20次会被锁定<br>
+192.168.1.8 1521 orcl system k8gege<br>
+192.168.1.8 orcl system k8gege<br>
+192.168.1.8 system k8gege<br>
+命令: Ladon OracleScan<br>
+###### mysql无需指定数据库名，注意默认不允许远程连接<br>
+192.168.1.8 3306 root k8gege<br>
+192.168.1.8 root k8gege<br>
+命令: Ladon MysqlScan<br>
+
+###### 非数据库
+SSH
+192.168.1.8 22 root k8gege<br>
+192.168.1.8 root k8gege<br>
+命令: Ladon SshScan<br>
+SMB/IPC/WMI(直接ip/用户/密码)<br>
+192.168.1.8 root k8gege<br>
+命令: Ladon WmiScan<br>
+###### 网站登陆
+weblogic<br>
+check.txt(url 用户 密码)<br>
+http://192.168.1.8:7001/console weblogic k8gege<br>
+命令: Ladon WeblogicScan<br>
