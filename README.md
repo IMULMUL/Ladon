@@ -237,12 +237,12 @@ check.txt<br>
 192.168.1.8 sa k8gege<br>
 192.168.1.8 1433 sa k8gege<br>
 命令: Ladon MssqlScan<br>
-##### oracle同理,但是要注意Oracle 11G以后默认尝试不到20次会被锁定<br>
+##### oracle同理<br>
 192.168.1.8 1521 orcl system k8gege<br>
 192.168.1.8 orcl system k8gege<br>
 192.168.1.8 system k8gege<br>
 命令: Ladon OracleScan<br>
-##### mysql无需指定数据库名，注意默认不允许远程连接<br>
+##### mysql无需指定数据库名<br>
 192.168.1.8 3306 root k8gege<br>
 192.168.1.8 root k8gege<br>
 命令: Ladon MysqlScan<br>
