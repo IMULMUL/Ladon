@@ -198,10 +198,9 @@ ping.ini<br>
 exe=cmd.exe<br>
 arg=/c ping $ip$<br>
 
-``` bash
-> Ladon ping.ini
-> Ladon 192.168.1.8/24 ping.ini
-```
+命令:  Ladon ping.ini<br>
+命令:  Ladon 192.168.1.8/24 ping.ini<br>
+
 2  调用Python poc批量检测漏洞
 [Ladon]<br>
 exe=F:\Python279\python.exe<br>
@@ -230,24 +229,24 @@ arg=CVE-2019-11043-POC.py $ip$<br>
 
 #### 数据库口令检测
 数据库与其它密码爆破不同，有时数据库做了权限，指定用户只能连指定库，连默认库肯定不行<br>
-###### mssql密码验证(大型内网可能从其它机器收集到大量机器密码，第一步肯定是先验证)<br>
+##### mssql密码验证(大型内网可能从其它机器收集到大量机器密码，第一步肯定是先验证)<br>
 非默认端口请将以下端口改成被修改端口即可，单个IP可直接Ladon IP:端口 MssqlScan扫描<br>
 check.txt<br>
 192.168.1.8 1433 master sa k8gege<br>
 192.168.1.8 sa k8gege<br>
 192.168.1.8 1433 sa k8gege<br>
 命令: Ladon MssqlScan<br>
-###### oracle同理,但是要注意Oracle 11G以后默认尝试不到20次会被锁定<br>
+##### oracle同理,但是要注意Oracle 11G以后默认尝试不到20次会被锁定<br>
 192.168.1.8 1521 orcl system k8gege<br>
 192.168.1.8 orcl system k8gege<br>
 192.168.1.8 system k8gege<br>
 命令: Ladon OracleScan<br>
-###### mysql无需指定数据库名，注意默认不允许远程连接<br>
+##### mysql无需指定数据库名，注意默认不允许远程连接<br>
 192.168.1.8 3306 root k8gege<br>
 192.168.1.8 root k8gege<br>
 命令: Ladon MysqlScan<br>
 
-###### 非数据库
+##### 非数据库
 SSH
 192.168.1.8 22 root k8gege<br>
 192.168.1.8 root k8gege<br>
@@ -255,7 +254,7 @@ SSH
 SMB/IPC/WMI(直接ip/用户/密码)<br>
 192.168.1.8 root k8gege<br>
 命令: Ladon WmiScan<br>
-###### 网站登陆
+##### 网站登陆
 weblogic<br>
 check.txt(url 用户 密码)<br>
 http://192.168.1.8:7001/console weblogic k8gege<br>
