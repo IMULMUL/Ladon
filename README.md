@@ -1,4 +1,5 @@
-# Ladon 5.5 20191109   Readme update 20191111
+# Ladon 5.5 20191109   
+# Readme Update 20191111
 
 [![Author](https://img.shields.io/badge/Author-k8gege-blueviolet)](https://github.com/k8gege) 
 [![Ladon](https://img.shields.io/badge/Ladon-5.5-yellowgreen)](https://github.com/k8gege/Ladon) 
@@ -246,16 +247,22 @@ check.txt<br>
 192.168.1.8 root k8gege<br>
 命令: Ladon MysqlScan<br>
 
-##### 非数据库
-SSH
+##### 系统密码
+SSH<br>
+check.txt<br>
 192.168.1.8 22 root k8gege<br>
 192.168.1.8 root k8gege<br>
 命令: Ladon SshScan<br>
 SMB/IPC/WMI(直接ip/用户/密码)<br>
+check.txt
 192.168.1.8 root k8gege<br>
 命令: Ladon WmiScan<br>
-##### 网站登陆
+##### 网站密码
 weblogic<br>
 check.txt(url 用户 密码)<br>
 http://192.168.1.8:7001/console weblogic k8gege<br>
 命令: Ladon WeblogicScan<br>
+
+##### 文件密码
+因Rar压缩包只需一个密码,故只需pass.txt,注意中文密码需将txt保存为Ansi编码<br>
+命令: Ladon test.rar RarScan<br>
