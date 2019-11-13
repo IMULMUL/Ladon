@@ -14,6 +14,8 @@
 <img src=https://k8gege.github.io/k8img/Ladon/CS_Ladon.gif></img>
 ### 使用说明
 https://github.com/k8gege/Ladon/wiki<br>
+https://github.com/k8gege/Ladon/wiki/Ladon-Usage<br>
+https://github.com/k8gege/Ladon/wiki/Ladon-&-Cobalt-Strike<br>
 
 ### 源码编译
 git clone https://github.com/k8gege/Ladon.git<br>
