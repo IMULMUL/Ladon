@@ -21,7 +21,7 @@ ID | 主题 |  URL
 3 | Cobalt Strike | https://github.com/k8gege/Ladon/wiki/Ladon-&-Cobalt-Strike<br>
 4 | Exp生成器使用 | https://github.com/k8gege/Ladon/wiki/LadonExp-Usage
 5 | 高度自定义插件 | https://github.com/k8gege/Ladon/wiki/Ladon-Diy-Moudle
-6 | 外部模块参考使用 | https://github.com/k8gege/K8CScan/wiki
+6 | 外部模块参考 | https://github.com/k8gege/K8CScan/wiki
 ### 源码编译
 git clone https://github.com/k8gege/Ladon.git<br>
 使用VS2012或以上版本分别编译.net 3.5、4.0版本EXE<br>
