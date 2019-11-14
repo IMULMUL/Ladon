@@ -21,7 +21,7 @@ ID | 主题 |  URL
 3 | Cobalt Strike | https://github.com/k8gege/Ladon/wiki/Ladon-&-Cobalt-Strike<br>
 4 | Exp生成器使用 | https://github.com/k8gege/Ladon/wiki/LadonExp-Usage
 5 | 高度自定义插件 | https://github.com/k8gege/Ladon/wiki/Ladon-Diy-Moudle
-
+6 | 外部模块参考使用 | https://github.com/k8gege/K8CScan/wiki
 ### 源码编译
 git clone https://github.com/k8gege/Ladon.git<br>
 使用VS2012或以上版本分别编译.net 3.5、4.0版本EXE<br>
@@ -187,11 +187,11 @@ ID | 模块名称 |  功能说明
 	中级用法INI文件配置调用任意程序、系统命令、各种语言现成EXP的批量利用<br>
 	高级用法Exp生成器一键生成Poc，使用各种语言编写插件扩展Ladon扫描能力。<br>
 
-### 外置插件模块(9)
+### 外部插件模块(9)
 
 ID | 模块类型 |  功能说明  
 -|-|-
-1 | 漏洞扫描 | CVE 2019-0708 Windows Rdp 3389远程代码执行<br>
+1 | 漏洞扫描 | CVE 2019-0708 Windows Rdp 3389漏洞批量检测<br>
 2 | 漏洞利用 | ThinkPHP 5.0.22 5.1.29 RCE GetShell Exploit<br>
 3 | 漏洞利用 | CVE-2019-9621 Zimbra GetShell Exploit<br>
 4 | 漏洞利用 |CVE-2019-0604 SharePoint GetShell Exploit<br>
