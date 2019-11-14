@@ -183,7 +183,7 @@ ID | 模块名称 |  功能说明
 
 ### 外置插件模块(9)
 
-ID | 模块名称 |  功能说明  
+ID | 模块类型 |  功能说明  
 -|-|-
 1 | 漏洞扫描 | CVE 2019-0708 Windows Rdp 3389远程代码执行<br>
 2 | 漏洞利用 | ThinkPHP 5.0.22 5.1.29 RCE GetShell Exploit<br>
@@ -192,8 +192,8 @@ ID | 模块名称 |  功能说明
 5 | 漏洞利用 |CVE 2016-3088 ActiveMQ GetShell Exploit<br>
 6 | 漏洞利用 | Apache Solr 8.2.0 Velocity RCE 0day Exploit<br>
 7 | 漏洞利用 | PhpStudy后门 GetShell Exploit<br>
-8 | SSH上控 | INI调用外部程序命令 批量SSH上控<br>
-9 | Win上控 | INI调用外部程序命令 批量Win上控<br>
+8 | 内网渗透 | INI调用外部程序命令批量Linux上控<br>
+9 | 内网渗透 | INI调用外部程序命令批量Windowns上控<br>
 
 
 ## 中级用法
