@@ -99,28 +99,33 @@ Ladon采用C#研发，程序体积很小500K左右，即便马不行也能上传
 例子: Ladon OnlinePC(扫当前机器所处C段，其它模块同理)<br>
 例子: Ladon 192.168.1.8/24 OnlinePC<br>
 
-1  OnlinePC 		存活主机扫描<br>
-2  OnlineIP 		仅存活主机IP<br>
-3  UrlScan 			URL域名扫描<br>
-4  SameWeb 			同服域名扫描<br>
-5  WebScan 			Web信息扫描<br>
-6  WebDir 			后台目录扫描<br>
-7  SubDomain 		子域名爆破<br>
-8  DomainIP 		域名解析IP	<br>
-9  HostIP 			主机名转IP<br>
+序号 | 模块名称 |  功能说明  
+-|-|-
+1 | OnlinePC | 存活主机扫描<br>
+2 | OnlineIP | 仅存活主机IP<br>
+3 | UrlScan 	|		URL域名扫描<br>
+4 | SameWeb 	|		同服域名扫描<br>
+5 | WebScan 	|		Web信息扫描<br>
+6 | WebDir 	|		后台目录扫描<br>
+7 | SubDomain 	|	子域名爆破<br>
+8 | DomainIP 	|	域名解析IP	<br>
+9 | HostIP 	|		主机名转IP<br>
+
 
 #### 0x002 指纹识别/服务识别<br>
 
 例子: Ladon OsScan<br>
 例子: Ladon 192.168.1.8/24 OsScan<br>
 
-1  OsScan 			操作系统版本探测<br>
-2  PortScan 		端口扫描含Banner<br>
-3  WebBanner 		内网Web信息扫描<br>
-4  WhatCMS 			75种Web指纹识别<br>
-5  CiscoScan 		思科设备扫描<br>
-6  EnumMssql 		枚举Mssql数据库主机<br>
-7  EnumShare 		枚举网络共享资源<br>
+序号 | 模块名称 |  功能说明  
+-|-|-
+1 | OsScan 	|		操作系统版本探测<br>
+2 | PortScan 	|	端口扫描含Banner<br>
+3 | WebBanner 	|	内网Web信息扫描<br>
+4 | WhatCMS 	|		75种Web指纹识别<br>
+5 | CiscoScan 	|	思科设备扫描<br>
+6 | EnumMssql 	|	枚举Mssql数据库主机<br>
+7 | EnumShare 	|	枚举网络共享资源<br>
 
 #### 0x003 口令检测/密码爆破<br>
 [自定义端口(IP:端口)、帐密检测(用户 密码)、主机帐密检测(IP 端口 数据库 用户 密码)]<br>
