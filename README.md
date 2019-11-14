@@ -17,7 +17,7 @@
 ID | 主题 |  URL 
 -|-|-
 1 | Ladon文档主页 | https://github.com/k8gege/Ladon/wiki<br>
-2 | Ladon用法详解 | https://github.com/k8gege/Ladon/wiki/Ladon-Usage<br>
+2 | 基础用法详解 | https://github.com/k8gege/Ladon/wiki/Ladon-Usage<br>
 3 | Cobalt Strike | https://github.com/k8gege/Ladon/wiki/Ladon-&-Cobalt-Strike<br>
 4 | Exp生成器使用 | https://github.com/k8gege/Ladon/wiki/LadonExp-Usage
 5 | 高度自定义插件 | https://github.com/k8gege/Ladon/wiki/Ladon-Diy-Moudle
