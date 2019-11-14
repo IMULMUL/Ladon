@@ -20,6 +20,8 @@ ID | 主题 |  URL
 2 | Ladon用法详解 | https://github.com/k8gege/Ladon/wiki/Ladon-Usage<br>
 3 | Cobalt Strike | https://github.com/k8gege/Ladon/wiki/Ladon-&-Cobalt-Strike<br>
 4 | Exp生成器使用 | https://github.com/k8gege/Ladon/wiki/LadonExp-Usage
+5 | 高度自定义插件 | https://github.com/k8gege/Ladon/wiki/Ladon-Diy-Moudle
+
 ### 源码编译
 git clone https://github.com/k8gege/Ladon.git<br>
 使用VS2012或以上版本分别编译.net 3.5、4.0版本EXE<br>
@@ -284,7 +286,3 @@ http://192.168.1.8:7001/console weblogic k8gege<br>
 因Rar压缩包只需一个密码,故只需pass.txt,注意中文密码需将txt保存为Ansi编码<br>
 命令: Ladon test.rar RarScan<br>
 
-## 未完待续...
-1 EXP生成器使用<br>
-2 各种语言插件编写<br>
-可先参考Cscan: https://github.com/k8gege/K8CScan/wiki<br>
