@@ -13,9 +13,13 @@
 ### Cobalt Strike
 <img src=https://k8gege.github.io/k8img/Ladon/CS_Ladon.gif></img>
 ### 使用说明
-https://github.com/k8gege/Ladon/wiki<br>
-https://github.com/k8gege/Ladon/wiki/Ladon-Usage<br>
-https://github.com/k8gege/Ladon/wiki/Ladon-&-Cobalt-Strike<br>
+
+ID | 主题 |  URL 
+-|-|-
+1 | Ladon文档主页 | https://github.com/k8gege/Ladon/wiki<br>
+2 | Ladon用法详解 | https://github.com/k8gege/Ladon/wiki/Ladon-Usage<br>
+3 | Cobalt Strike | https://github.com/k8gege/Ladon/wiki/Ladon-&-Cobalt-Strike<br>
+4 | Exp生成器使用 | https://github.com/k8gege/Ladon/wiki/LadonExp-Usage
 ### 源码编译
 git clone https://github.com/k8gege/Ladon.git<br>
 使用VS2012或以上版本分别编译.net 3.5、4.0版本EXE<br>
