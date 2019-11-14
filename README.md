@@ -22,7 +22,7 @@ ID | 主题 |  URL
 4 | Exp生成器使用 | https://github.com/k8gege/Ladon/wiki/LadonExp-Usage
 5 | 高度自定义插件 | https://github.com/k8gege/Ladon/wiki/Ladon-Diy-Moudle
 6 | 外部模块参考 | https://github.com/k8gege/K8CScan/wiki
-7 | PowerShell | PowerShell版Ladon请稍候...
+7 | PowerShell | PowerShell版Ladon.ps1正在测试,请稍候...
 8 | Ladon & Linux | 目前只有python版的Cscan，后续可能兼容mono
 ### 源码编译
 git clone https://github.com/k8gege/Ladon.git<br>
