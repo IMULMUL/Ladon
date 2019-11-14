@@ -192,8 +192,8 @@ ID | 模块类型 |  功能说明
 5 | 漏洞利用 |CVE 2016-3088 ActiveMQ GetShell Exploit<br>
 6 | 漏洞利用 | Apache Solr 8.2.0 Velocity RCE 0day Exploit<br>
 7 | 漏洞利用 | PhpStudy后门 GetShell Exploit<br>
-8 | 内网渗透 | INI调用外部程序命令批量Linux上控<br>
-9 | 内网渗透 | INI调用外部程序命令批量Windowns上控<br>
+8 | 命令执行 | INI调用外部程序命令批量Linux上控<br>
+9 | 命令执行 | INI调用外部程序命令批量Windowns上控<br>
 
 
 ## 中级用法
