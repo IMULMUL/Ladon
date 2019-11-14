@@ -201,6 +201,7 @@ ID | 模块类型 |  功能说明
 8 | 命令执行 | INI调用外部程序命令批量Linux上控<br>
 9 | 命令执行 | INI调用外部程序命令批量Windowns上控<br>
 
+文档参考Cscan: https://github.com/k8gege/K8CScan/wiki
 
 ## 中级用法
 
