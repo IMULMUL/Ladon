@@ -24,6 +24,8 @@ ID | 主题 |  URL
 6 | 外部模块参考 | https://github.com/k8gege/K8CScan/wiki
 7 | PowerShell | PowerShell版Ladon.ps1正在测试,请稍候...
 8 | 跨平台使用 | 目前有python版的Cscan但功能少，后续可能通过mono跨平台
+9 | 漏洞演示视频 | https://github.com/k8gege/K8CScan/tree/master/Video
+
 ### 源码编译
 git clone https://github.com/k8gege/Ladon.git<br>
 使用VS2012或以上版本分别编译.net 3.5、4.0版本EXE<br>
