@@ -27,7 +27,7 @@ Win8-win10或安装.net 4.x系统可以使用4.0的exe<br>
 
 ### 关于
 
->Ladon是希腊神话中的神兽，看守金苹果的百头巨龙。它从不睡觉，被赫拉克勒斯借扛天巨人之手诱巨龙睡着<br>
+Ladon是希腊神话中的神兽，看守金苹果的百头巨龙。它从不睡觉，被赫拉克勒斯借扛天巨人之手诱巨龙睡着<br>
 杀死巨龙并偷得了金苹果。巨龙死前将自己的魂魄封印在金苹果中，偷盗者将金苹果送给了白雪公主，公主<br>
 为了报恩将金苹果分给了七个小矮人，吃下以后他们变成了龙珠散落到世界各地，龙珠分为七颗，它蕴含着<br>
 可以令奇迹发生的力量。当集齐7颗龙珠念出咒语，就能召唤神龙，而神龙则会实现召唤者提出的一个愿望。<br>
@@ -135,17 +135,19 @@ Ladon采用C#研发，程序体积很小500K左右，即便马不行也能上传
 例子: Ladon 192.168.1.8:22 SshScan (指定端口)<br>
 例子: Ladon test.rar RarScan<br>
 
-1  WmiScan 			Wmi密码爆破(Windowns)<br>
-2  IpcScan 			Ipc密码爆破(Windows)<br>
-3  SmbScan 			SMB密码爆破(Windows)<br>
-4  SshScan 			SSH密码爆破(Linux)<br>
-5  MssqlScan 		Mssql数据库密码爆破<br>
-6  OracleScan 		Oracle数据库密码爆破<br>
-7  MysqlScan 		Mysql数据库密码爆破<br>
-8  WeblogicScan 	Weblogic后台密码爆破<br>
-9  VncScan 			VNC远程桌面密码爆破<br>
-10 FtpScan 			Ftp服务器密码爆破<br>
-11 RarScan 			Rar压缩包密码爆破	<br>
+序号 | 模块名称 |  功能说明  
+-|-|-
+1 | WmiScan 	|		Wmi密码爆破(Windowns)<br>
+2 | IpcScan 	|		Ipc密码爆破(Windows)<br>
+3 | SmbScan 	|		SMB密码爆破(Windows)<br>
+4 | SshScan 	|		SSH密码爆破(Linux)<br>
+5 | MssqlScan 	|	Mssql数据库密码爆破<br>
+6 | OracleScan 	|	Oracle数据库密码爆破<br>
+7 | MysqlScan 	|	Mysql数据库密码爆破<br>
+8 | WeblogicScan |	Weblogic后台密码爆破<br>
+9 | VncScan 	|		VNC远程桌面密码爆破<br>
+10 | FtpScan 	|		Ftp服务器密码爆破<br>
+11 | RarScan 	|		Rar压缩包密码爆破	<br>
 
 #### 0x004 漏洞检测/漏洞利用
 
@@ -153,23 +155,28 @@ Ladon采用C#研发，程序体积很小500K左右，即便马不行也能上传
 例子: Ladon 192.168.1.8/24 MS17010<br>
 例子: Ladon http://192.168.1.8 WeblogicExp<br>
 
-1  MS17010 			SMB漏洞检测(CVE-2017-0143/CVE-2017-0144/CVE-2017-0145/CVE-2017-0146/CVE-2017-0148)<br>
-2  WeblogicPoc		Weblogic漏洞检测(CVE-2019-2725)<br>
-3  PhpStudyPoc 		PhpStudy后门检测(phpstudy 2016/phpstudy 2018)<br>
-4  ActivemqPoc 		ActiveMQ漏洞检测(CVE-2016-3088)	<br>
-5  TomcatPoc 		Tomcat漏洞检测(CVE-2017-12615)<br>
-6  WeblogicExp		Weblogic漏洞利用(CVE-2019-2725)<br>
-7  TomcatExp 		Tomcat漏洞利用(CVE-2017-12615)<br>
-8  Struts2Poc		Struts2漏洞检测(S2-005/S2-009/S2-013/S2-016/S2-019/S2-032/DevMode)<br>
+序号 | 模块名称 |  功能说明  
+-|-|-
+1 | MS17010 		|	SMB漏洞检测(CVE-2017-0143/CVE-2017-0144/CVE-2017-0145/CVE-2017-0146/CVE-2017-0148)<br>
+2 | WeblogicPoc	|	Weblogic漏洞检测(CVE-2019-2725)<br>
+3 | PhpStudyPoc |		PhpStudy后门检测(phpstudy 2016/phpstudy 2018)<br>
+4 | ActivemqPoc |		ActiveMQ漏洞检测(CVE-2016-3088)	<br>
+5 | TomcatPoc 	|	Tomcat漏洞检测(CVE-2017-12615)<br>
+6 | WeblogicExp	|	Weblogic漏洞利用(CVE-2019-2725)<br>
+7 | TomcatExp 	|	Tomcat漏洞利用(CVE-2017-12615)<br>
+8 | Struts2Poc	|	Struts2漏洞检测(S2-005/S2-009/S2-013/S2-016/S2-019/S2-032/DevMode)<br>
 
 #### 0x006 加密解密
 例子: Ladon 字符串 EnHex<br>
 例子: Ladon EnHex (批量str.txt)<br>
 
-1  EnHex			批量Hex密码加密<br>
-2  DeHex 			批量Hex密码解密<br>
-3  EnBase64			批量Base64密码加密<br>
-4  DeBase64 		批量Base64密码解密<br>
+序号 | 模块名称 |  功能说明  
+-|-|-
+
+1 | EnHex	|		批量Hex密码加密<br>
+2 | DeHex 	|		批量Hex密码解密<br>
+3 | EnBase64	|		批量Base64密码加密<br>
+4 | DeBase64 	|	批量Base64密码解密<br>
 
 注：以上仅是该工具内置模块的初级用法，外置插件或更高级用法请查看使用文档<br>
 	中级用法INI文件配置调用任意程序、系统命令、各种语言现成EXP的批量利用<br>
@@ -177,15 +184,17 @@ Ladon采用C#研发，程序体积很小500K左右，即便马不行也能上传
 
 ### 外置插件模块(9)
 
-1  漏洞扫描 CVE 2019-0708 Windows Rdp 3389远程代码执行<br>
-2  漏洞利用 ThinkPHP 5.0.22 5.1.29 RCE GetShell Exploit<br>
-3  漏洞利用 CVE-2019-9621 Zimbra GetShell Exploit<br>
-4  漏洞利用 CVE-2019-0604 SharePoint GetShell Exploit<br>
-5  漏洞利用 CVE 2016-3088 ActiveMQ GetShell Exploit<br>
-6  漏洞利用 Apache Solr 8.2.0 Velocity RCE 0day Exploit<br>
-7  漏洞利用 PhpStudy后门 GetShell Exploit<br>
-8  INI调用外部程序命令 批量SSH上控<br>
-9  INI调用外部程序命令 批量Win上控<br>
+序号 | 模块名称 |  功能说明  
+-|-|-
+1 | 漏洞扫描 | CVE 2019-0708 Windows Rdp 3389远程代码执行<br>
+2 | 漏洞利用 | ThinkPHP 5.0.22 5.1.29 RCE GetShell Exploit<br>
+3 | 漏洞利用 | CVE-2019-9621 Zimbra GetShell Exploit<br>
+4 | 漏洞利用 |CVE-2019-0604 SharePoint GetShell Exploit<br>
+5 | 漏洞利用 |CVE 2016-3088 ActiveMQ GetShell Exploit<br>
+6 | 漏洞利用 | Apache Solr 8.2.0 Velocity RCE 0day Exploit<br>
+7 | 漏洞利用 | PhpStudy后门 GetShell Exploit<br>
+8 | SSH上控 | INI调用外部程序命令 批量SSH上控<br>
+9 | Win上控 | INI调用外部程序命令 批量Win上控<br>
 
 
 ## 中级用法
