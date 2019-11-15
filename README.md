@@ -293,7 +293,7 @@ http://192.168.1.8:7001/console weblogic k8gege<br>
 因Rar压缩包只需一个密码,故只需pass.txt,注意中文密码需将txt保存为Ansi编码<br>
 命令: Ladon test.rar RarScan<br>
 
-### PowerLadon使用
+### PowerLadon
 0x001 PowerShell<br>
 ```bash
 $ powershell 
