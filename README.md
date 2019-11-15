@@ -24,7 +24,7 @@ ID | 主题 |  URL
 4 | Exp生成器使用 | https://github.com/k8gege/Ladon/wiki/LadonExp-Usage
 5 | 高度自定义插件 | https://github.com/k8gege/Ladon/wiki/Ladon-Diy-Moudle
 6 | 外部模块参考 | https://github.com/k8gege/K8CScan/wiki
-7 | PowerLadon | 兼容win7-win10 PowerShell，无需指定.net或powershell版本
+7 | PowerLadon | https://github.com/k8gege/Ladon/wiki/PowerLadon-Usage
 8 | 跨平台使用 | 目前有python版的Cscan但功能少，后续可能通过mono跨平台
 9 | 漏洞演示视频 | https://github.com/k8gege/K8CScan/tree/master/Video
 
