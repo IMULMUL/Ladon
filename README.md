@@ -294,7 +294,7 @@ http://192.168.1.8:7001/console weblogic k8gege<br>
 因Rar压缩包只需一个密码,故只需pass.txt,注意中文密码需将txt保存为Ansi编码<br>
 命令: Ladon test.rar RarScan<br>
 
-## PowerLadon
+## PowerShell
 PowerLadon完美兼容win7-win10 PowerShell，对于不支持.net程序插件化的远控，可使用<br>
 PowerShell版,也可CMD命令行下远程加载内存实现无文件扫描，模块加载后用法和EXE一致。<br>
 
