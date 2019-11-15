@@ -65,6 +65,7 @@ Ladon一款用于大型网络渗透的多线程插件化综合扫描神器，含
 
 Ladon.exe可在安装有.net 2.0及以上版本Win系统中使用(Win7后系统自带.net)<br>
 如Cmd、PowerShell、远控Cmd、WebShell等，以及Cobalt Strike内存加载使用<br>
+Ladon.ps1完美兼容win7-win10 PowerShell，不看版本可远程加载实现无文件渗透<br>
 
 ### 奇葩条件
 
