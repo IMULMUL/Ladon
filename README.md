@@ -112,17 +112,17 @@ Ladon采用C#研发，程序体积很小500K左右，即便马不行也能上传
 例子: Ladon OnlinePC(扫当前机器所处C段，其它模块同理)<br>
 例子: Ladon 192.168.1.8/24 OnlinePC<br>
 
-ID | 模块名称 |  功能说明  
+ID | 模块名称 |  功能说明  | 返回结果
 -|-|-
-1 | OnlinePC | 存活主机扫描<br>
-2 | OnlineIP | 仅存活主机IP<br>
-3 | UrlScan 	|		URL域名扫描<br>
-4 | SameWeb 	|		同服域名扫描<br>
-5 | WebScan 	|		Web信息扫描<br>
-6 | WebDir 	|		后台目录扫描<br>
-7 | SubDomain 	|	子域名爆破<br>
-8 | DomainIP 	|	域名解析IP	<br>
-9 | HostIP 	|		主机名转IP<br>
+1 | OnlinePC | 存活主机扫描 | IP、Mac地址、机器名
+2 | OnlineIP | 仅存活主机IP | IP
+3 | UrlScan  | URL域名扫描 | 同服URL（IP、域名）
+4 | SameWeb  | 同服域名扫描 | 同服URL（IP、域名、Web标题）
+5 | WebScan  | Web信息扫描 | IP、主机名、Banner、Web标题
+6 | WebDir  | 后台目录扫描 | 同服URL（IP、域名、Web标题）
+7 | SubDomain  | 子域名爆破 | 子域名 (可用DomainIP/HostIP解析)
+8 | DomainIP  | 域名解析IP | 域名、IP
+9 | HostIP  | 主机名转IP | IP、域名
 
 
 #### 0x002 指纹识别/服务识别<br>
@@ -130,15 +130,14 @@ ID | 模块名称 |  功能说明
 例子: Ladon OsScan<br>
 例子: Ladon 192.168.1.8/24 OsScan<br>
 
-ID | 模块名称 |  功能说明  
+ID | 模块名称 |  功能说明  | 返回结果
 -|-|-
-1 | OsScan 	|		操作系统版本探测<br>
-2 | PortScan 	|	端口扫描含Banner<br>
-3 | WebBanner 	|	内网Web信息扫描<br>
-4 | WhatCMS 	|		75种Web指纹识别<br>
-5 | CiscoScan 	|	思科设备扫描<br>
-6 | EnumMssql 	|	枚举Mssql数据库主机<br>
-7 | EnumShare 	|	枚举网络共享资源<br>
+1 | OsScan  |  操作系统版本探测 | IP、机器名、操作系统
+2 | PortScan  | 端口扫描含Banner | 主机名、开放端口、服务识别、Banner、Web标题
+3 | WhatCMS  |  75种Web指纹识别 | URL、CMS版本、登陆页面、中间件等
+4 | CiscoScan  | 思科设备扫描 | IP、设备型号、主机名、Boot、硬件版本
+5 | EnumMssql  | 枚举Mssql数据库主机 | 数据库IP、机器名、SQL版本
+6 | EnumShare  | 枚举网络共享资源 | 域、IP、共享路径
 
 #### 0x003 口令检测/密码爆破<br>
 [自定义端口(IP:端口)、帐密检测(用户 密码)、主机帐密检测(IP 端口 数据库 用户 密码)]<br>
@@ -148,19 +147,19 @@ ID | 模块名称 |  功能说明
 例子: Ladon 192.168.1.8:22 SshScan (指定端口)<br>
 例子: Ladon test.rar RarScan<br>
 
-ID | 模块名称 |  功能说明  
+ID | 模块名称 |  功能说明  | 返回结果
 -|-|-
-1 | WmiScan 	|		Wmi密码爆破(Windowns)<br>
-2 | IpcScan 	|		Ipc密码爆破(Windows)<br>
-3 | SmbScan 	|		SMB密码爆破(Windows)<br>
-4 | SshScan 	|		SSH密码爆破(Linux)<br>
-5 | MssqlScan 	|	Mssql数据库密码爆破<br>
-6 | OracleScan 	|	Oracle数据库密码爆破<br>
-7 | MysqlScan 	|	Mysql数据库密码爆破<br>
-8 | WeblogicScan |	Weblogic后台密码爆破<br>
-9 | VncScan 	|		VNC远程桌面密码爆破<br>
-10 | FtpScan 	|		Ftp服务器密码爆破<br>
-11 | RarScan 	|		Rar压缩包密码爆破	<br>
+1 | WmiScan  |  Wmi密码爆破(Windowns) | 检测状态以及正确密码日志
+2 | IpcScan  |  Ipc密码爆破(Windows) | 检测状态以及正确密码日志
+3 | SmbScan  |  SMB密码爆破(Windows) | 检测状态以及正确密码日志
+4 | SshScan  |  SSH密码爆破(Linux) | 检测状态以及正确密码日志
+5 | MssqlScan  | Mssql数据库密码爆破 | 检测状态以及正确密码日志
+6 | OracleScan  | Oracle数据库密码爆破 | 检测状态以及正确密码日志
+7 | MysqlScan  | Mysql数据库密码爆破 | 检测状态以及正确密码日志
+8 | WeblogicScan | Weblogic后台密码爆破 | 检测状态以及正确密码日志
+9 | VncScan  |  VNC远程桌面密码爆破 | 检测状态以及正确密码日志
+10 | FtpScan  |  Ftp服务器密码爆破 | 检测状态以及正确密码日志
+11 | RarScan  |  Rar压缩包密码爆破 | 检测状态以及正确密码日志
 
 #### 0x004 漏洞检测/漏洞利用
 
@@ -170,14 +169,14 @@ ID | 模块名称 |  功能说明
 
 ID | 模块名称 |  功能说明  
 -|-|-
-1 | MS17010 		|	SMB漏洞检测(CVE-2017-0143/CVE-2017-0144/CVE-2017-0145/CVE-2017-0146/CVE-2017-0148)<br>
-2 | WeblogicPoc	|	Weblogic漏洞检测(CVE-2019-2725)<br>
-3 | PhpStudyPoc |		PhpStudy后门检测(phpstudy 2016/phpstudy 2018)<br>
-4 | ActivemqPoc |		ActiveMQ漏洞检测(CVE-2016-3088)	<br>
-5 | TomcatPoc 	|	Tomcat漏洞检测(CVE-2017-12615)<br>
-6 | WeblogicExp	|	Weblogic漏洞利用(CVE-2019-2725)<br>
-7 | TomcatExp 	|	Tomcat漏洞利用(CVE-2017-12615)<br>
-8 | Struts2Poc	|	Struts2漏洞检测(S2-005/S2-009/S2-013/S2-016/S2-019/S2-032/DevMode)<br>
+1 | MS17010   | SMB漏洞检测(CVE-2017-0143/CVE-2017-0144/CVE-2017-0145/CVE-2017-0146/CVE-2017-0148)<br>
+2 | WeblogicPoc | Weblogic漏洞检测(CVE-2019-2725)<br>
+3 | PhpStudyPoc |  PhpStudy后门检测(phpstudy 2016/phpstudy 2018)<br>
+4 | ActivemqPoc |  ActiveMQ漏洞检测(CVE-2016-3088) <br>
+5 | TomcatPoc  | Tomcat漏洞检测(CVE-2017-12615)<br>
+6 | WeblogicExp | Weblogic漏洞利用(CVE-2019-2725)<br>
+7 | TomcatExp  | Tomcat漏洞利用(CVE-2017-12615)<br>
+8 | Struts2Poc | Struts2漏洞检测(S2-005/S2-009/S2-013/S2-016/S2-019/S2-032/DevMode)<br>
 
 #### 0x005 加密解密
 例子: Ladon 字符串 EnHex<br>
@@ -185,14 +184,14 @@ ID | 模块名称 |  功能说明
 
 ID | 模块名称 |  功能说明  
 -|-|-
-1 | EnHex	|		批量Hex密码加密<br>
-2 | DeHex 	|		批量Hex密码解密<br>
-3 | EnBase64	|		批量Base64密码加密<br>
-4 | DeBase64 	|	批量Base64密码解密<br>
+1 | EnHex |  批量Hex密码加密<br>
+2 | DeHex  |  批量Hex密码解密<br>
+3 | EnBase64 |  批量Base64密码加密<br>
+4 | DeBase64  | 批量Base64密码解密<br>
 
 注：以上仅是该工具内置模块的初级用法，外置插件或更高级用法请查看使用文档<br>
-	中级用法INI文件配置调用任意程序、系统命令、各种语言现成EXP的批量利用<br>
-	高级用法Exp生成器一键生成Poc，使用各种语言编写插件扩展Ladon扫描能力。<br>
+ 中级用法INI文件配置调用任意程序、系统命令、各种语言现成EXP的批量利用<br>
+ 高级用法Exp生成器一键生成Poc，使用各种语言编写插件扩展Ladon扫描能力。<br>
 
 ### 外部插件模块(9)
 
