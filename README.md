@@ -116,10 +116,10 @@ ID | 模块名称 |  功能说明  | 返回结果
 -|-|-|-
 1 | OnlinePC | 存活主机扫描 | IP、Mac地址、机器名
 2 | OnlineIP | 仅存活主机IP | IP
-3 | UrlScan  | URL域名扫描 | 同服URL（IP、域名）
-4 | SameWeb  | 同服域名扫描 | 同服URL（IP、域名、Web标题）
+3 | UrlScan  | URL域名扫描 | 同服URL（不验证IP、域名、Web标题）
+4 | SameWeb  | 同服域名扫描 | 同服URL（验证IP、域名、Web标题）
 5 | WebScan  | Web信息扫描 | IP、主机名、Banner、Web标题
-6 | WebDir  | 后台目录扫描 | 同服URL（IP、域名、Web标题）
+6 | WebDir  | 后台目录扫描 | 地址、HTTP状态
 7 | SubDomain  | 子域名爆破 | 子域名 (可用DomainIP/HostIP解析)
 8 | DomainIP  | 域名解析IP | 域名、IP
 9 | HostIP  | 主机名转IP | IP、域名
