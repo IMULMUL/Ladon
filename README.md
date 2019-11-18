@@ -114,11 +114,11 @@ Ladon采用C#研发，程序体积很小500K左右，即便马不行也能上传
 
 ID | 模块名称 |  功能说明  | 返回结果
 -|-|-|-
-1 | OnlinePC | 存活主机扫描 | IP、Mac地址、机器名
-2 | OnlineIP | 仅存活主机IP | IP
+1 | OnlinePC | 存活主机扫描 | 存活IP、Mac地址、机器名
+2 | OnlineIP | 仅存活主机IP | 存活IP
 3 | UrlScan  | URL域名扫描 | 同服URL（不验证IP、域名、Web标题）
 4 | SameWeb  | 同服域名扫描 | 同服URL（验证IP、域名、Web标题）
-5 | WebScan  | Web信息扫描 | IP、主机名、Banner、Web标题
+5 | WebScan  | Web信息扫描 | 存活IP、主机名、Banner、Web标题
 6 | WebDir  | 后台目录扫描 | 地址、HTTP状态
 7 | SubDomain  | 子域名爆破 | 子域名 (可用DomainIP/HostIP解析)
 8 | DomainIP  | 域名解析IP | 域名、IP
@@ -132,12 +132,12 @@ ID | 模块名称 |  功能说明  | 返回结果
 
 ID | 模块名称 |  功能说明  | 返回结果
 -|-|-|-
-1 | OsScan  |  操作系统版本探测 | IP、机器名、操作系统
+1 | OsScan  |  操作系统版本探测 | 存活IP、机器名、操作系统
 2 | PortScan  | 端口扫描含Banner | 主机名、开放端口、服务识别、Banner、Web标题
 3 | WhatCMS  |  75种Web指纹识别 | URL、CMS版本、登陆页面、中间件等
-4 | CiscoScan  | 思科设备扫描 | IP、设备型号、主机名、Boot、硬件版本
+4 | CiscoScan  | 思科设备扫描 | 存活IP、设备型号、主机名、Boot、硬件版本
 5 | EnumMssql  | 枚举Mssql数据库主机 | 数据库IP、机器名、SQL版本
-6 | EnumShare  | 枚举网络共享资源 | 域、IP、共享路径
+6 | EnumShare  | 枚举网络共享资源 | 域、存活IP、共享路径
 
 #### 0x003 口令检测/密码爆破<br>
 [自定义端口(IP:端口)、帐密检测(用户 密码)、主机帐密检测(IP 端口 数据库 用户 密码)]<br>
